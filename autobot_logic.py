@@ -8,7 +8,7 @@ import csv
 import random
 
 THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
-ANSWERS = os.path.join(THIS_FOLDER, 'answers.csv')
+ANSWERS = os.path.join(THIS_FOLDER, 'answers.txt')
 
 
 def random_greet():
@@ -55,6 +55,6 @@ def answers(answer_this):
 
 
 if __name__ == "__main__":
-    answer = answers('')
+    answer = answers('What do you have on SDK')
     print()
     print(answer)
