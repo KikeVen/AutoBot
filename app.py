@@ -1,6 +1,5 @@
 import json
-from flask import Flask, send_file, jsonify, request
-import requests
+from flask import Flask, jsonify, request
 import autobot_logic as al
 
 app = Flask(__name__)
