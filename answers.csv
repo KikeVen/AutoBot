@@ -1,6 +1,0 @@
-sdk|The quickest way to add WhatsApp integration to your web app with the Twilio API is using one of our SDK Helper Libraries.|https://www.twilio.com/docs/sms/whatsapp#sdks
-python helper library|Python helper library makes it easy to interact with the Twilio API from your Python application. The most recent version of the library can be found on PyPi|https://www.twilio.com/docs/libraries/python
-tutorials|In this tutorial, we'll set up a Python Flask application that uses the WhatsApp Channel to send media messages and reply to incoming messages with media|https://www.twilio.com/docs/sms/whatsapp/tutorial/send-and-receive-media-messages-twilio-api-whatsapp
-api for whatsapp|The Twilio API for WhatsApp enables you to reach over 1.5 billion users on WhatsApp using a simple REST API , all in Twilio's Programmable Messaging platform.|https://www.twilio.com/docs/sms/whatsapp/api
-autopilot|With Twilio Autopilot, you can build Whatsapp bots.|https://www.twilio.com/docs/autopilot/channels/whatsapp
-contact us|Contact Expert Help When You Need It. From a Developer plan to Personalized support.|https://www.twilio.com/support-plans
