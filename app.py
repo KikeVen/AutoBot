@@ -1,18 +1,9 @@
 import json
 from flask import Flask, send_file, jsonify, request
+import requests
 import autobot_logic as al
 
 app = Flask(__name__)
-
-
-@app.route('/')
-def home():
-    return 'Nothing to see here!'
-
-
-@app.route('/dynamicsay', methods=['POST'])
-def dynamic_say():
-    return send_file('saywhat.json')
 
 
 @app.route('/collect', methods=['POST'])
