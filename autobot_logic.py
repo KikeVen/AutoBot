@@ -42,19 +42,20 @@ def answers(answer_this):
         message = (f"Sorry, something went wrong, we don't have that information.\n\n"
                    f'Can I help you with anything else?')
         return message
+
     elif len(the_one) == 1:
         message = (f'{random_greet()}! {the_one[0][1]} For more information, please visit {the_one[0][2]}.\n\n'
                    f'Can I help you with anything else?')
         return message
+
     else:
-        for i in the_one:
-            random_one = random.choice(the_one)
-            message = (f'{random_greet()}! {random_one[1]} For more information, please visit {random_one[2]}.\n\n'
-                       f'Can I help you with anything else?')
-            return message
+        random_one = random.choice(the_one)
+        message = (f'{random_greet()}! {random_one[1]} For more information, please visit {random_one[2]}.\n\n'
+                   f'Can I help you with anything else?')
+        return message
 
 
 if __name__ == "__main__":
-    answer = answers('What do you have on SDK')
+    answer = answers('api contact')
     print()
     print(answer)
