@@ -34,24 +34,24 @@ def answers(answer_this):
         answers_dict[keyword] = [description, link]
     answers_csv.close()
 
-    finalists = []
+    intersect_list = []
     for k in answers_dict.keys():
         if bool(set(k.split()) & set(answer_this)):
-            finalists.append((k, answers_dict[k][0], answers_dict[k][1]))
+            intersect_list.append((k, answers_dict[k][0], answers_dict[k][1]))
 
-    if len(finalists) == 0:
+    if len(intersect_list) == 0:
         message = (f"Sorry, something went wrong, we don't have that information.\n\n"
                    f'Can I help you with anything else?')
         return message
 
     else:
-        random_one = random.choice(finalists)
+        random_one = random.choice(intersect_list)
         message = (f'{random_greet()}! {random_one[1]} For more information, please visit {random_one[2]}.\n\n'
                    f'Can I help you with anything else?')
         return message
 
 
 if __name__ == "__main__":
-    answer = answers('Python Library')
+    answer = answers('SDK')
     print()
     print(answer)
